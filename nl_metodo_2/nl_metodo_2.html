@@ -1,0 +1,568 @@
+<!doctype html>
+<html>
+ <head>
+ <meta charset="utf-8" />
+ <title>Cursos Tics gratuitos para empresas</title>
+ <style>
+	body{
+		font-family: Arial, Verdana, sans-serif;
+		max-width: 600px;
+		margin: auto;
+		margin-top: 0;
+		padding-top: 0;
+		background-color: #F2F2F2;
+	}
+	 
+	td {
+		/*padding: 10px 0px 5px 0px;*/
+	}
+	 
+	td.boton_anexo {
+		background: rgba(234,70,127,1);
+		background: -moz-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(234,70,127,1)), color-stop(100%, rgba(249,94,37,1)));
+		background: -webkit-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -o-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -ms-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: linear-gradient(to right, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea467f', endColorstr='#f95e25', GradientType=1 );
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	}
+	 
+	 .fichacurso {
+		 background-color:#f95e25;
+		 display:flex;
+		 align-items:center;
+		 box-shadow: inset 0px 20px 20px 0 #47474730;
+	 }
+	 
+	 .titulocurso {
+		 color: #ffffff;
+		 font-family: Arial, sans-serif;
+		 font-size: 17px;
+		 font-weight: bold;
+		 text-decoration: none;
+		 display: inline-block;	 
+	 }
+	 
+	 td.programa {
+		 background: rgba(245,159,127,1);
+		background: -moz-linear-gradient(top, rgba(245,159,127,1) 0%, rgba(255,255,255,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(245,159,127,1)), color-stop(100%, rgba(255,255,255,1)));
+		background: -webkit-linear-gradient(top, rgba(245,159,127,1) 0%, rgba(255,255,255,1) 100%);
+		background: -o-linear-gradient(top, rgba(245,159,127,1) 0%, rgba(255,255,255,1) 100%);
+		background: -ms-linear-gradient(top, rgba(245,159,127,1) 0%, rgba(255,255,255,1) 100%);
+		background: linear-gradient(to bottom, rgba(245,159,127,1) 0%, rgba(255,255,255,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f59f7f', endColorstr='#ffffff', GradientType=0 );
+	 }
+	 
+	 #tabla-doble-max-600, #tabla-simple-max-600 {display:block;}
+	 
+	 #tabla-doble-minus-600, #tabla-simple-minus-600 {display:none;}
+	 
+	 hr {
+		 width: 100px;
+		 border: 0;
+		 height:5px;
+		 background: rgba(234,70,127,1);
+		background: -moz-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(234,70,127,1)), color-stop(100%, rgba(249,94,37,1)));
+		background: -webkit-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -o-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: -ms-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		background: linear-gradient(to right, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea467f', endColorstr='#f95e25', GradientType=1 );
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+	 }
+	 
+	 a:hover img {
+	opacity:0.8;
+}
+	 
+	.footer {
+			 padding: 5px 10px;
+		 }
+	 
+	 @media screen and (max-width:600px) {
+		 .titulocurso {
+			 margin:15px 0;
+		 }
+		 
+		 .fichacurso {
+			 flex-flow:column;
+		 }
+		 
+		 #tabla-doble-max-600, #tabla-simple-max-600 {display:none;}
+	 
+	 	 #tabla-doble-minus-600, #tabla-simple-minus-600 {display:block;}
+		 
+		 img.fichacurso {
+			 width:100%!important;
+		 } 
+		 
+		 li {
+			 margin: 0 20px 5px 0;
+		 }
+		 
+	 }
+
+ </style>
+ </head>
+ 
+ <body>
+<!--nivel 0, tabla principal-->
+<table  style="border-collapse: collapse; text-align: center; background-color: #f0f0f0;" width="100%" cellspacing="0" cellpadding="0" align="center">
+	<tr>
+		<td align="center">
+			<!--nivel 1, ancho de la NL-->
+			<table  style="border-collapse: collapse;  max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+				<tr>
+					<td align="center">
+						<!--nivel 2, container ver mail-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; background-color: #ffffff; font-size: 10px;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" width="100%" style="padding-top: 7px; font-family: Arial, sans-serif;">Si no puedes ver correctamente este mail, <a title="Ver newsletter" href="#" target="_blank" tabindex="1">pulsa aquí</a></td>
+							</tr>
+						</table>
+						<!--nivel 2, container header-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center">
+									<tr>
+										<td align="center"><img src="../img/logos/logo_metodo.png" alt="Logo Método" width="125" border="0" style="display: block;"/></td>
+										<td style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; color:#4f4d4e; padding:20px 0px 0px 0px;">Expertos en formación para el empleo</td>
+									</tr>
+									<tr>
+										<td align="center" style="line-height: 0.5;">&nbsp;</td>
+									</tr>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, CONTAINER CURSOS 600px-->
+						<table id="tabla-simple-max-600" class="titulocurso" style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff; cursor:pointer;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td class="fichacurso" align="center">
+									<label style="padding:15px; color:#ffffff;">Curso de Internet seguro (Tics) (50h)</label>
+									<img class="fichacurso" src="../img/cursos/internet_seguro.jpg" alt="Curso Internet Seguro" border="0" style="display: block; width:60%;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="programa" align="justify" style="background-color:#CBCBCB; font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+									<label style="font-weight:bold;">Objetivos</label>
+									<ul>
+										<li>Manejar servicios y programas para trabajar de forma segura en la red.</li>
+									</ul>
+									<label style="font-weight:bold;">Programa</label>
+									<ol>
+										<li>Introducción y antivirus</li>
+										<li>Antivirus. Configuración, utilización</li>
+										<li>Cortafuegos</li>
+										<li>Antiespías</li>
+										<li>Antiespías. Configuración, utilización</li>
+										<li>Actualización del sistema operativo</li>
+										<li>Navegador seguro. Certificados</li>
+										<li>Correo seguro</li>
+										<li>Seguridad en las redes p2p</li>
+										<li>Comprobar seguridad</li>
+										<li>Varios</li>
+									</ol>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" style="line-height: 0.5;">&nbsp;</td>
+							</tr>
+						</table>
+						
+						<table id="tabla-doble-max-600" style="max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="5" cellpadding="0" align="center">
+							<tr>
+								<td width="50%" valign="top">
+									<!--nivel 3, container ficha curso 1-->
+									<table style="width:100%; height:100%;  text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr class="fichacurso" style="min-height: 60px; background-color:#f95e25; padding:15px 0">
+											<td class="titulocurso">
+												<label>Curso de Gestión de seguridad informática en la empresa (Tics) (100h)</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="../img/cursos/seguridad_informatica.png" alt="Curso Seguridad Informática" border="0" style="display: block; width:100%"/>
+											</td>
+										</tr>
+										<tr>
+											<td class="programa" align="justify" style="font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+									<label style="font-weight:bold;">Objetivos</label>
+									<ul>
+										<li>Gestionar la seguridad informática en la empresa.</li>
+									</ul>
+									<label style="font-weight:bold;">Programa</label>
+									<ol>
+										<li>Introducción a la seguridad</li>
+										<li>Políticas de seguridad</li>
+										<li>Auditoria y normativa de seguridad</li>
+										<li>Estrategias de seguridad</li>
+										<li>Exploración de las redes</li>
+										<li>Ataques remotos y locales</li>
+										<li>Seguridad en redes inalámbricas</li>
+										<li>Criptografía y criptoanálisis</li>
+										<li>Autenticación</li>
+									</ol>
+								</td>
+										</tr>
+									</table>
+								</td>
+								<td width="50%" valign="top">
+									<!--nivel 3, container ficha curso 2-->
+									<table style="width:100%; height:100%; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr class="fichacurso" style="min-height:60px; background-color:#f95e25; padding:15px 0px; ">
+											<td class="titulocurso">
+												<label>Curso de Reglamento europeo de protección de datos (Tics) (10h)</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img src="../img/cursos/reglamento_europeo.png" alt="Curso Reglamento Europeo Protección de Datos" border="0" style="display: block; width:100%;"/>
+											</td>
+										</tr>
+										<tr>
+											<td class="programa" align="justify" style="font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+												<label style="font-weight:bold;">Objetivos</label>
+												<ul>
+													<li>Conocer el Reglamento Europeo, situándolo en la jerarquía normativa, destacando todos aquellos aspectos que pueden generar algún tipo de incidencia en la utilización de los datos.</li>
+												</ul>
+												<label style="font-weight:bold;">Programa</label>
+												<ol>
+													<li>Introducción</li>
+													<li>Definiciones</li>
+													<li>Principios</li>
+													<li>Derechos del interesado u principios generales</li>
+													<li>Obligación del RF y RT</li>
+													<li>Medidas de seguridad</li>
+												</ol>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, CONTAINER CURSOS menor 600px-->
+						<table id="tabla-simple-minus-600" class="titulocurso" style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff; cursor:pointer;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td class="fichacurso" align="center">
+									<label style="padding:15px; color:#ffffff;">Curso de Internet seguro (Tics) (50h)</label>
+									<img class="fichacurso" src="../img/cursos/internet_seguro.jpg" alt="Curso Internet Seguro" border="0" style="display: block; width:60%;"/>
+								</td>
+							</tr>
+							<tr>
+								<td class="programa" align="justify" style="background-color:#CBCBCB; font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+									<label style="font-weight:bold;">Objetivos</label>
+									<ul>
+										<li>Manejar servicios y programas para trabajar de forma segura en la red.</li>
+									</ul>
+									<label style="font-weight:bold;">Programa</label>
+									<ol>
+										<li>Introducción y antivirus</li>
+										<li>Antivirus. Configuración, utilización</li>
+										<li>Cortafuegos</li>
+										<li>Antiespías</li>
+										<li>Antiespías. Configuración, utilización</li>
+										<li>Actualización del sistema operativo</li>
+										<li>Navegador seguro. Certificados</li>
+										<li>Correo seguro</li>
+										<li>Seguridad en las redes p2p</li>
+										<li>Comprobar seguridad</li>
+										<li>Varios</li>
+									</ol>
+								</td>
+							</tr>
+							<tr>
+								<td align="center" style="line-height: 0.5;">&nbsp;</td>
+							</tr>
+						</table>
+						
+						<table id="tabla-doble-minus-600" style="width: 100%; max-width: 599px; text-align: center; background-color: #ffffff; cursor:pointer;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td>
+									<!--nivel 3, curso 1-->
+									<table style="width: 100%; max-width: 599px; text-align: center; background-color: #ffffff; cursor:pointer; padding: 0px 0px 10px 0px" cellspacing="0" cellpadding="0" align="center">
+										<tr class="fichacurso" style="min-height:60px; background-color:#f95e25; padding:15px 0px; ">
+											<td class="titulocurso">
+												<label>Curso de Gestión de seguridad informática en la empresa (Tics) (100h)</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img class="fichacurso" src="../img/cursos/seguridad_informatica.png" alt="Curso Seguridad Informática" border="0" style="display: block; width:100%;"/>
+											</td>
+										</tr>
+										<tr>
+											<td class="programa" align="justify" style="font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+												<label style="font-weight:bold;">Objetivos</label>
+												<ul>
+													<li>Gestionar la seguridad informática en la empresa.</li>
+												</ul>
+												<label style="font-weight:bold;">Programa</label>
+												<ol>
+													<li>Introducción a la seguridad</li>
+													<li>Políticas de seguridad</li>
+													<li>Auditoria y normativa de seguridad</li>
+													<li>Estrategias de seguridad</li>
+													<li>Exploración de las redes</li>
+													<li>Ataques remotos y locales</li>
+													<li>Seguridad en redes inalámbricas</li>
+													<li>Criptografía y criptoanálisis</li>
+													<li>Autenticación</li>
+												</ol>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<!--nivel 3, curso 2-->
+									<table style="width: 100%; max-width: 599px; text-align: center; background-color: #ffffff; cursor:pointer; padding: 0px 0px 10px 0px" cellspacing="0" cellpadding="0" align="center">
+										<tr class="fichacurso" style="min-height:60px; background-color:#f95e25; padding:15px 0px; ">
+											<td class="titulocurso">
+												<label>Curso de Reglamento europeo de protección de datos (Tics) (10h)</label>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<img class="fichacurso" src="../img/cursos/reglamento_europeo.png" alt="Curso Reglamento Europeo Protección de Datos" border="0" style="display: block; width:100%;"/>
+											</td>
+										</tr>
+										<tr>
+											<td class="programa" align="justify" style="font-size: 14px; font-weight:normal; padding:15px 15px 0 15px; color:#111111;">
+												<label style="font-weight:bold;">Objetivos</label>
+												<ul>
+													<li>Conocer el Reglamento Europeo, situándolo en la jerarquía normativa, destacando todos aquellos aspectos que pueden generar algún tipo de incidencia en la utilización de los datos.</li>
+												</ul>
+												<label style="font-weight:bold;">Programa</label>
+												<ol>
+													<li>Introducción</li>
+													<li>Definiciones</li>
+													<li>Principios</li>
+													<li>Derechos del interesado u principios generales</li>
+													<li>Obligación del RF y RT</li>
+													<li>Medidas de seguridad</li>
+												</ol>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+							
+							
+
+		
+						<!--nivel 2, container inscripción-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px;  text-align: center; background-color: #ffffff; color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" bgcolor="#0091ca" style="padding:15px 0px 20px 0px;">
+									<!--nivel 3, título sección inscripción-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; padding:10px 0px 5px 0px;">¡Inscríbete ya! Plazas limitadas</td>
+										</tr>
+									</table>
+									<!--nivel 3, texto sección inscripción-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 16px; padding:5px 0px 5px 0px;">Descarga, cubre, firma el anexo y envíalo por email a:</td>
+										</tr>
+									</table>
+									<!--nivel 3, mail inscripción-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="padding:10px 0px 15px 0px;"><a href="mailto:rosasantos@metodogrupo.com" tabindex="2" target="_blank" style="color:#ffffff; font-weight:bold;">rosasantos@metodogrupo.com</a></td>
+										</tr>
+									</table>
+									<!--nivel 3, botón descargar anexo-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 250px; height:45px; text-align: center" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" class="boton_anexo" style="padding: 20px 20px 20px 20px;"><a href="#" tabindex="3" target="_blank" style="font-size: 16px; font-weight: bold; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; display: inline-block;">DESCARGAR ANEXO</a></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container presentación-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center">
+									<!--nivel 3, título sección nosotros-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; color:#4f4d4e; padding:20px 0px 0px 0px;">¿Por qué nosotros?
+											<hr/>
+											</td>
+										</tr>
+									</table>
+									<!--nivel 3, título sección inscripción-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center"><img src="../img/logos/logo_metodo.png" alt="Logo Método" width="125" border="0" style="display: block;"/></td>
+										</tr>
+									</table>
+									<!--nivel 3, título sección inscripción-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="padding:0px 0px 10px 0px; color:#000000;">Somos una empresa con más de 20 años de experiencia en la docencia y hemos formado a más de 10.000 alumnos presencialmente y en modalidad de teleformación.</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+		
+						<!--nivel 2, container argumentario-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; color:#ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" bgcolor="#5badd3">
+									<!--nivel 3, título razones-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold;padding: 10px 0px 0px 0px;">¿Por qué hacer esta formación?</td>
+										</tr>
+									</table>
+									<!--nivel 3, lista razones-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="justify">
+												<ul>
+													<li style="font-size:14px;">Son cursos gratuitos, ¡sin letra pequeña! No es formación bonificada, sino 100% subvencionada, así que no tienen coste ni para ti, ni para tu empresa.</li>
+													<li style="font-size:14px;">Aumentas tus habilidades y competencias profesionales.</li>
+													<li style="font-size:14px;">Obtienes un diploma acreditativo, con el que añades valor a tu CV.</li>
+													<li style="font-size:14px;">Innovadora plataforma online. Te formas a tu ritmo con tutor personal.</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td align="justify" style="line-height: 0.5;">&nbsp;</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container prioritarios-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px;  text-align: center; background-color: #ffffff; color:#ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" bgcolor="#5badd3">
+									<!--nivel 3, título colectivos-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; padding: 10px 0px 0px 0px;">Colectivos prioritarios</td>
+										</tr>
+									</table>
+									<!--nivel 3, lista colectivos-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="justify">
+												<ul>
+													<li style="font-size:14px;">Mujeres.</li>
+													<li style="font-size:14px;">Jóvenes menores de 30 años.</li>
+													<li style="font-size:14px;">Mayores de 45 años.</li>
+													<li style="font-size:14px;">Personas con discapacidad</li>
+													<li style="font-size:14px;">Personas con bajo nivel de cualificación (grupo de cotización 6, 7, 9 ó 10).</li>
+													<li style="font-size:14px;">Trabajadores de Pymes</li>
+													<li style="font-size:14px;">Trabajadores con contrato a tiempo parcial o temporal.</li>
+												</ul>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container contacto-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" style="padding: 10px 15px 20px 25px">
+									<!--nivel 3, título sección dudas-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; color:#4f4d4e; padding: 10px 0px 10px 0px;">¿Tienes dudas?<hr/></td>
+										</tr>
+									</table>
+									<!--nivel 3, teléfonos contacto-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-size:16px; color:#000000;">Infórmate en el teléfono gratuito<br/>  
+											<span style="font-size:24px; font-weight: bold; color:#0091ca;">900 812 902</span><br/>o a través de WhatsApp en el<br/>
+											<span style="font-size:24px; font-weight: bold; color:#4f4d4e;">604 004 679</span>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container rrss-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center" style="padding: 10px 15px 20px 25px">
+									<!--nivel 3, título sección síguenos rrss-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arial, sans-serif; font-size: 20px; font-weight: bold; color:#4f4d4e; padding: 0px 0px 15px 0px;">Síguenos en:<hr/></td>
+										</tr>
+									</table>
+									<!--nivel 3, lista rrss-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center"><a href="https://www.facebook.com/metodogroup" target="_blank" tabindex="4"><img src="../img/logos/facebook.png" alt="Logo Facebook" width="35px" border="0" style="display: block;"/></a></td>
+											<td align="center"><a href="https://twitter.com/GrupoMetodo" target="_blank" tabindex="5"><img src="../img/logos/twitter.png" alt="Logo Twitter" width="35px" border="0" style="display: block;"/></a></td>
+											<td align="center"><a href="https://www.instagram.com/grupometodo/" target="_blank" tabindex="6"><img src="../img/logos/instagram.png" alt="Logo Instagram" width="35px" border="0" style="display: block;"/></a></td>
+											<td align="center"><a href="https://www.linkedin.com/company/grupometodo/" target="_blank" tabindex="7"><img src="../img/logos/linkedin.png" alt="Logo LinkedIn" width="35px" border="0" style="display: block;"/></a></td>
+											<td align="center"><a href="https://www.youtube.com/user/metodoconsultores" target="_blank" tabindex="8"><img src="../img/logos/youtube.png" alt="Logo YouTube" width="35px" border="0" style="display: block;"/></a></td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container institucional-->
+						<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td align="center">
+									<!--nivel 3, plazas convocatoria-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; color: darkgray; font-size: 14px;" cellspacing="0" cellpadding="0" align="center">
+									<tr>
+										<td align="center" style="padding: 10px 0px 0px 0px;">Plazas limitadas y sujetas a los requisitos de la convocatoria</td>
+									</tr>
+									</table>
+									<!--nivel 3, plazas convocatoria-->
+									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+									<tr>
+										<td align="center"><img src="../img/logos/logos_sepe_fundae.png" alt="Logos SEPE y FUNDAE" width="100%" border="0" style="display: block;"/></td>
+									</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container footer-->
+						<table style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff; font-size:10px; color:darkgrey;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td class="footer" align="justify">La Información incluida en el presente correo electrónico es CONFIDENCIAL y está protegida por SECRETO PROFESIONAL, siendo para el uso exclusivo del destinatario arriba mencionado. Si usted recibe y lee este mensaje y no es el destinatario señalado o ha recibido este mensaje por error, le informamos que está totalmente prohibida cualquier divulgación, utilización o reproducción de esta comunicación y de la información en ella contenida, por lo que le rogamos que nos lo notifique a la mayor brevedad con devolución del mensaje original a la dirección <a href="mailto:rgpd@metodoconsultores.com" target="_blank" tabindex="9">rgpd@metodoconsultores.com</a>.</td>
+							</tr>	
+							<tr>
+								<td class="footer" align="justify">En virtud del Reglamento europeo 2016/679 (RGPD), le informamos de que sus datos de contacto electrónico y aquellos que nos aporte en virtud de la relación establecida, están siendo tratados con la máxima confidencialidad y de acuerdo con la protección y especificaciones contenidas en dicha normativa, cuyo Responsable de tratamiento es Método Estudios Consultores S.L. (Método) , con la finalidad de dar respuesta a su consulta y desarrollo de la relación negocial o contractual, mediante el correo electrónico u otras vías de comunicación. La legitimación para el tratamiento de sus datos es la relación negocial o contractual establecida. Sus datos no serán cedidos a terceros, excepto si lo solicita y es necesario e imprescindible para dar cumplimiento y atender su solicitud. Los derechos que le otorga el RGPD (acceso, rectificación, supresión, limitación, portabilidad) podrán ser ejercidos por Vd. dirigiéndose por escrito a Método, Departamento de Protección de Datos, en la dirección c/ Aragón nº 82, bajo, 36206 - Vigo (Pontevedra) o por email a <a href="mailto:rgpd@metodoconsultores.com" target="_blank" tabindex="10">rgpd@metodoconsultores.com</a>, con Referencia: “Protección de Datos”, a través de un escrito firmado al efecto y adjuntando fotocopia de su DNI u otro documento que acredite su identidad de manera inequívoca. Asimismo y salvo que medie autorización expresa por su parte, le comunicamos que no se utilizarán dichos datos para el envío de comunicaciones comerciales por correo electrónico no solicitadas o no autorizadas expresamente y previamente por el interesado, según lo estipulado en RGPD.</td>
+							</tr>
+						</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+ </body>
+ </html>
