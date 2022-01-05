@@ -6,7 +6,7 @@
  <style>	 
 	@import url('https://fonts.googleapis.com/css2?family=Arvo&family=Raleway:wght@300;400;600;700&display=swap'); 
 	 
-	body{
+	body {
 		font-family: Raleway, sans-serif;
 		max-width: 600px;
 		margin: auto;
@@ -15,101 +15,42 @@
 		background-color: #ececec;
 	}
 	 
-	 .fichacurso {
-		 display:flex;
-		 align-items:center;
-		 box-shadow: inset 0px 20px 20px 0 #4f4d4e;
+	 td.reduced {
+		 padding:15px 0px 20px 0px;
 	 }
 	 
-	 .titulocurso {
-		 color: #ffffff;
-		 font-family: Arial, sans-serif;
-		 font-size: 18px;
-		 font-weight: bold;
-		 text-decoration: none;
-		 display: inline-block;
+	 a.cta-mail{
+		 color:#000000;
 	 }
 	 
-	 td.fondo-boton {
-		background: rgba(234,70,127,1);
-		background: -moz-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(234,70,127,1)), color-stop(100%, rgba(249,94,37,1)));
-		background: -webkit-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -o-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -ms-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: linear-gradient(to right, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea467f', endColorstr='#f95e25', GradientType=1 );
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
-		border-radius: 15px;
-	}
- 
-	 hr {
-		 width: 100px;
-		 border: 0;
-		 height:5px;
-		 background: rgba(234,70,127,1);
-		background: -moz-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(234,70,127,1)), color-stop(100%, rgba(249,94,37,1)));
-		background: -webkit-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -o-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: -ms-linear-gradient(left, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		background: linear-gradient(to right, rgba(234,70,127,1) 0%, rgba(249,94,37,1) 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea467f', endColorstr='#f95e25', GradientType=1 );
-		-webkit-border-radius: 15px;
-		-moz-border-radius: 15px;
-		border-radius: 15px;
+	 a:hover.cta-mail {
+		 background-color:#2d2926;
+		 color:#ffffff;
 	 }
 	 
-	 a:hover img {
-	opacity:0.9;
-}
-	 
-	 #tabla-600, #boton-600 {
-		 display:table;
-	 }
-	 
-	 #tabla-400, #boton-400 {
-		 display:none;
-	 } 
-	 
-	 @media screen and (max-width:600px) {
-		 /*.titulocurso {
-			 margin:15px 0;
-		 }*/
-		 
-		 .fichacurso {
-			 flex-flow:column;
-		 }
-		 
-		 img.fichacurso {
-			 width:100%!important;
-		 } 
-		 
-		#tabla-600, #boton-600 {
-		 display:none;
-	 	 }
-	 	#tabla-400, #boton-400 {
-		 display:table;
-		 } 
-		 
-		 #tabla-400 img {
-			 width:100%;
-		 }
-		 
-		 #boton-600 {
-			 width:95%;
-		 }
-		 
-		 li {
-			 margin: 0 20px 5px 0;
-		 } 
+	 .footer a {
+		 color:#e03c31;
 	 }
 
- </style>
- </head>
+	 .footer a:hover {
+		 background-color:#e03c31;
+		 color:#ffffff;
+		 
+	 }
+	 
+	@media screen and (max-width:600px) {		
+		td.reduced {
+			padding: 20px;
+		}
+
+		a.cta-mail{
+		 font-size:80%;
+		 }
+	}
+</style>
+</head>
  
- <body>
+<body>
 <!--nivel 0, tabla principal-->
 <table style="border-collapse: collapse; text-align: center; background-color: #f0f0f0;" width="100%" cellspacing="0" cellpadding="0" align="center">
 	<tr>
@@ -122,121 +63,83 @@
 						<!--nivel 2, container ver mail-->
 						<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; background-color: #ffffff; font-size: 10px;" cellspacing="0" cellpadding="0" align="center">
 							<tr>
-								<td align="center" width="100%" style="padding: 7px 0; font-family: Arial, sans-serif;">Si no puedes ver correctamente este mail, <a title="Ver newsletter" href="#" target="_blank" tabindex="1">pulsa aquí</a></td>
+								<td class="reduced" align="center" width="100%" style="padding: 7px 0; font-family: Arial, sans-serif;">Si no puedes ver correctamente este mail, <a title="Ver newsletter" href="#" target="_blank" tabindex="1">pulsa aquí</a></td>
 							</tr>
 						</table>
 			
 						<!--nivel 2, container header-->
 						<table style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
 							<tr>
-								<td align="center">
-									<tr>
-										<td align="center" bgcolor="#e03c31" style="padding:20px 0px;"><img src="../img/logos/logo_CMA_blanco.png" alt="Logo Método" width="250" border="0" style="display: block;"/></td>
-									</tr>
+								<td class="reduced" align="center" bgcolor="#e03c31" style="padding:20px 0px;"><img src="../img/logos/logo_CMA_blanco.png" alt="Logo Consultora Monte Alto" width="250" border="0" style="display: block;"/></td>
+							</tr>
+						</table>
+						
+						<!--nivel 2, container presentación-->	
+						<table style="border-collapse: collapse; width: 100%; max-width: 600px;  text-align: center; background-color: #ffffff; color: #2d2926;" cellspacing="0" cellpadding="0" align="center">
+							<tr>
+								<td class="reduced" align="center">
+									<!--nivel 3, título presentación-->
+									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Arvo, sans-serif; font-size: 24px; font-weight: bold; padding:10px 0px 5px 0px;">¡Enhorabuena!</td>
+										</tr>
+									</table>
+									<!--nivel 3, texto presentación-->
+									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="center" style="font-family: Raleway, sans-serif; font-size: 18px; font-weight: bold; padding:5px 0px 5px 0px;">Ya estás inscrito/a en este curso</td>
+										</tr>
+									</table>
+									<table style="border-collapse: collapse; width: 100%; max-width: 550px; font-weight: 400; text-align: center; color:#000000;" cellspacing="0" cellpadding="0" align="center">
+										<tr>
+											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recuerda que estos cursos están subvencionados por diferentes entidades del Ministerio de Empleo y Seguridad Social (SEPE), por lo que no supondrán ningún coste directo para ti.
+											</td>
+										</tr>
+										<tr>
+											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">En estos momentos estamos procesando tu solicitud y en un breve plazo de tiempo un miembro de equipo de Consultora Monte Alto se pondrá en contacto contigo para verificar tus datos y finalizar la suscripción.
+											</td>
+										</tr>
+										<tr>
+											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Bienvenido/a a la comunidad de Consultora Monte Alto y muchas gracias por confiar en nosotros.
+											</td>
+										</tr>
+										<tr>
+											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recibe un cordial saludo,
+											</td>
+										</tr>
+										<tr>
+											<td class="reduced"align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; padding:5px 0px 5px 0px;">Equipo Consultora Monte Alto
+											</td>
+										</tr>
+									</table>
 								</td>
 							</tr>
 						</table>
 						
-						<!--nivel 2, container saludo 600px-->	
-						<table id="tabla-600" style="border-collapse: collapse; width: 100%; max-width: 600px;  text-align: center; background-color: #ffffff; color: #2d2926;" cellspacing="0" cellpadding="0" align="center">
-							<tr>
-								<td align="center" style="padding:15px 0px 20px 0px;">
-									<!--nivel 3, título sección inscripción-->
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="center" style="font-family: Arvo, sans-serif; font-size: 24px; font-weight: bold; padding:10px 0px 5px 0px;">¡Enhorabuena!</td>
-										</tr>
-									</table>
-									<!--nivel 3, texto sección inscripción-->
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="center" style="font-family: Raleway, sans-serif; font-size: 18px; font-weight: bold; padding:5px 0px 5px 0px;">Ya estás inscrito/a en este curso</td>
-										</tr>
-									</table>
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; font-weight: 400; text-align: center; color:#000000;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recuerda que estos cursos están subvencionados por diferentes entidades del Ministerio de Empleo y Seguridad Social (SEPE), por lo que no supondrán ningún coste directo para ti.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">En estos momentos estamos procesando tu solicitud y en un breve plazo de tiempo un miembro de equipo de Consultora Monte Alto se pondrá en contacto contigo para verificar tus datos y finalizar la suscripción.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Bienvenido/a a la comunidad de Consultora Monte Alto y muchas gracias por confiar en nosotros.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recibe un cordial saludo,
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; padding:5px 0px 5px 0px;">Equipo Consultora Monte Alto
-											</td>
-										</tr>
-									</table>
-							</tr>
-						</table>
-						
-						<!--nivel 2, container cursos 400px-->	
-						<table id="tabla-400" style="border-collapse: collapse; width: 100%; max-width: 600px;  text-align: center; background-color: #ffffff; color: #2d2926;" cellspacing="0" cellpadding="0" align="center">
-							<tr>
-								<td align="center" style="padding:15px 0px 20px 0px;">
-									<!--nivel 3, título sección inscripción-->
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="center" style="font-family: Arvo, sans-serif; font-size: 24px; font-weight: bold; padding:10px 0px 5px 0px;">¡Enhorabuena!</td>
-										</tr>
-									</table>
-									<!--nivel 3, texto sección inscripción-->
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="center" style="font-family: Raleway, sans-serif; font-size: 18px; font-weight: bold; padding:5px 0px 5px 0px;">Ya estás inscrito/a en este curso</td>
-										</tr>
-									</table>
-									<table style="border-collapse: collapse; width: 100%; max-width: 550px; font-weight: 400; text-align: center; color:#000000;" cellspacing="0" cellpadding="0" align="center">
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recuerda que estos cursos están subvencionados por diferentes entidades del Ministerio de Empleo y Seguridad Social (SEPE), por lo que no supondrán ningún coste directo para ti.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">En estos momentos estamos procesando tu solicitud y en un breve plazo de tiempo un miembro de equipo de Consultora Monte Alto se pondrá en contacto contigo para verificar tus datos y finalizar la suscripción.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Bienvenido/a a la comunidad de Consultora Monte Alto y muchas gracias por confiar en nosotros.
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; padding:5px 0px 5px 0px;">Recibe un cordial saludo,
-											</td>
-										</tr>
-										<tr>
-											<td align="justify" style="font-family: Raleway, sans-serif; font-size: 14px; font-weight: 600; padding:5px 0px 5px 0px;">Equipo Consultora Monte Alto
-											</td>
-										</tr>
-									</table>
-							</tr>
-						</table>
-						
-
-						<!--nivel 2, container contacto-->
+						<!--nivel 2, container cta-->
 						<table  style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #dbe442;" cellspacing="0" cellpadding="0" align="center">
 							<tr>
-								<td align="center" style="padding: 0px 15px 20px 25px">
-									<!--nivel 3, título sección dudas-->
-									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+								<td class="reduced" align="center" style="padding: 15px;">
+									<!--nivel 3, título cta-->
+									<table  style="mborder-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
 										<tr>
-											<td align="center" style="font-family: Arvo, sans-serif; font-size: 20px; font-weight: bold; color:#2d2926; padding: 10px 0px 10px 0px;">Para cualquier duda puedes contactarnos en el</td>
+											<td align="center" style="font-family: Arvo, sans-serif; font-size: 18px; font-weight: bold; color:#2d2926; padding-bottom: 5px;">Para cualquier duda puedes llamarnos al</td>
+										</tr>
+										<tr>
+											<td align="center" style="font-size:32px; font-weight: bold; color:#000000; padding-bottom: 5px;">900 812 902</td>
+										</tr>
+										<tr>
+											<td align="center" style="font-size:14px; font-weight: regular; color:#000000; padding-bottom: 20px;">(de lunes a viernes en horario de 9:00 a 19:00 h)</td>
 										</tr>
 									</table>
 									
-									<!--nivel 3, teléfonos contacto-->
-									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
+									<!--nivel 3, métodos de contacto-->
+									<table  style="border-collapse:collapse; width:100%; max-width:550px; text-align:center;" cellspacing="0" cellpadding="0" align="center">
 										<tr>
-											<td align="center" style="font-size:16px; color:#000000;">Infórmate en el teléfono gratuito<br/>  
-											<span style="font-size:24px; font-weight: bold; color:#0091ca;">900 812 902</span><br/><br/>o a través de WhatsApp en el<br/>
-											<span style="font-size:24px; font-weight: bold; color:#4f4d4e;">604 004 679</span></td>
+											<td align="center" style="font-family: Arvo, sans-serif; font-size: 18px; font-weight: bold; color:#2d2926; padding-bottom: 5px;">o enviarnos un email a</td>
+										</tr>
+										<tr>
+											<td align="center" style="font-family: Raleway, sans-serif; font-size: 24px; font-weight: bold; padding-bottom:10px;"><a class="cta-mail" href="mailto:info@consultoramontealto.com" target="_blank" tabindex="2">info@consultoramontealto.com</a></td>
 										</tr>
 									</table>
 								</td>
@@ -245,20 +148,23 @@
 						
 		
 						<!--nivel 2, container institucional-->
-						<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
+						<table  style="border-collapse: collapse; width: 100%; text-align: center; background-color: #ffffff;" cellspacing="0" cellpadding="0" align="center">
 							<tr>
-								<td align="center">
+								<td class="reduced" align="center">
 									<!--nivel 3, plazas convocatoria-->
-									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; color: #e03c31; font-size: 14px;" cellspacing="0" cellpadding="0" align="center">
+									<table style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center; color: #e03c31; font-size: 14px;" cellspacing="0" cellpadding="0" align="center">
 										<tr>
-											<td align="center" style="padding: 10px 0px 0px 0px;">Plazas limitadas y sujetas a los requisitos de la convocatoria</td>
+											<td align="center" style="padding: 10px 0px 0px 0px; font-weight: 600;">Plazas limitadas y sujetas a los requisitos de la convocatoria</td>
 										</tr>
 									</table>
 									
-									<!--nivel 3, plazas convocatoria-->
+									<!--nivel 3, logos institucionales-->
 									<table  style="border-collapse: collapse; width: 100%; max-width: 550px; text-align: center;" cellspacing="0" cellpadding="0" align="center">
 										<tr>
 											<td align="center"><img src="../img/logos/logos_sepe_fundae.png" alt="Logos SEPE y FUNDAE" width="100%" border="0" style="display: block;"/></td>
+										</tr>
+										<tr>
+											<td align="center" style="line-height: 0.5;">&nbsp;</td>
 										</tr>
 									</table>
 								</td>
@@ -268,10 +174,13 @@
 						<!--nivel 2, container footer-->
 						<table style="border-collapse: collapse; width: 100%; max-width: 600px; text-align: center; background-color: #ffffff; font-size:10px; color:darkgrey;" cellspacing="0" cellpadding="0" align="center">
 							<tr>
-								<td class="footer" align="justify">La Información incluida en el presente correo electrónico es CONFIDENCIAL y está protegida por SECRETO PROFESIONAL, siendo para el uso exclusivo del destinatario arriba mencionado. Si usted recibe y lee este mensaje y no es el destinatario señalado o ha recibido este mensaje por error, le informamos que está totalmente prohibida cualquier divulgación, utilización o reproducción de esta comunicación y de la información en ella contenida, por lo que le rogamos que nos lo notifique a la mayor brevedad con devolución del mensaje original a la dirección <a href="mailto:rgpd@metodoconsultores.com" target="_blank" tabindex="9">rgpd@metodoconsultores.com</a>.</td>
+								<td class="footer" align="justify" style="padding:5px 20px;">La Información incluida en el presente correo electrónico es CONFIDENCIAL y está protegida por SECRETO PROFESIONAL, siendo para el uso exclusivo del destinatario arriba mencionado. Si usted recibe y lee este mensaje y no es el destinatario señalado o ha recibido este mensaje por error, le informamos que está totalmente prohibida cualquier divulgación, utilización o reproducción de esta comunicación y de la información en ella contenida, por lo que le rogamos que nos lo notifique a la mayor brevedad con devolución del mensaje original a la dirección <a href="mailto:info@consultoramontealto.com" target="_blank" tabindex="3">info@consultoramontealto.com</a>.</td>
 							</tr>	
 							<tr>
-								<td class="footer" align="justify">En virtud del Reglamento europeo 2016/679 (RGPD), le informamos de que sus datos de contacto electrónico y aquellos que nos aporte en virtud de la relación establecida, están siendo tratados con la máxima confidencialidad y de acuerdo con la protección y especificaciones contenidas en dicha normativa, cuyo Responsable de tratamiento es Método Estudios Consultores S.L. (Método) , con la finalidad de dar respuesta a su consulta y desarrollo de la relación negocial o contractual, mediante el correo electrónico u otras vías de comunicación. La legitimación para el tratamiento de sus datos es la relación negocial o contractual establecida. Sus datos no serán cedidos a terceros, excepto si lo solicita y es necesario e imprescindible para dar cumplimiento y atender su solicitud. Los derechos que le otorga el RGPD (acceso, rectificación, supresión, limitación, portabilidad) podrán ser ejercidos por Vd. dirigiéndose por escrito a Método, Departamento de Protección de Datos, en la dirección c/ Aragón nº 82, bajo, 36206 - Vigo (Pontevedra) o por email a <a href="mailto:rgpd@metodoconsultores.com" target="_blank" tabindex="10">rgpd@metodoconsultores.com</a>, con Referencia: “Protección de Datos”, a través de un escrito firmado al efecto y adjuntando fotocopia de su DNI u otro documento que acredite su identidad de manera inequívoca. Asimismo y salvo que medie autorización expresa por su parte, le comunicamos que no se utilizarán dichos datos para el envío de comunicaciones comerciales por correo electrónico no solicitadas o no autorizadas expresamente y previamente por el interesado, según lo estipulado en RGPD.</td>
+								<td class="footer" align="justify" style="padding:5px 20px;">En virtud del Reglamento europeo 2016/679 (RGPD), le informamos de que sus datos de contacto electrónico y aquellos que nos aporte en virtud de la relación establecida, están siendo tratados con la máxima confidencialidad y de acuerdo con la protección y especificaciones contenidas en dicha normativa, cuyo Responsable de tratamiento es Método Estudios Consultores S.L. (Método), con la finalidad de dar respuesta a su consulta y desarrollo de la relación negocial o contractual, mediante el correo electrónico u otras vías de comunicación. La legitimación para el tratamiento de sus datos es la relación negocial o contractual establecida. Sus datos no serán cedidos a terceros, excepto si lo solicita y es necesario e imprescindible para dar cumplimiento y atender su solicitud. Los derechos que le otorga el RGPD (acceso, rectificación, supresión, limitación, portabilidad) podrán ser ejercidos por Vd. dirigiéndose por escrito a Método, Departamento de Protección de Datos, en la dirección c/Aragón nº 82, bajo, 36206 - Vigo (Pontevedra) o por email a <a href="mailto:info@consultoramontealto.com" target="_blank" tabindex="4">info@consultoramontealto.com</a>, con Referencia: “Protección de Datos”, a través de un escrito firmado al efecto y adjuntando fotocopia de su DNI u otro documento que acredite su identidad de manera inequívoca. Asimismo y salvo que medie autorización expresa por su parte, le comunicamos que no se utilizarán dichos datos para el envío de comunicaciones comerciales por correo electrónico no solicitadas o no autorizadas expresamente y previamente por el interesado, según lo estipulado en RGPD.</td>
+							</tr>
+							<tr>
+								<td align="center" style="line-height: 0.5;">&nbsp;</td>
 							</tr>
 						</table>
 					</td>
@@ -280,5 +189,5 @@
 		</td>
 	</tr>
 </table>
- </body>
- </html>
+</body>
+</html>
